@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head >
-        <title>
-            B'day Card 
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Birthday card  </title>
+  <link rel="stylesheet" href="./style.css">
+
+    <script>
+      function play() {
+        var audio = new Audio('bdayAudio.mp3');
+        audio.play();
+      }
+    </script>
 
 
+</head>
 <body>
-    <div class="card">
-                    <div class="back">
-                    
-                     </div>
+  
 
-      <div class="front">
-        <div class="imgset">
-             <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-           </div>
-      </div>
-      <div class="text-container">
-        <p id="head">Happy Birthday</p>
-        <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
-        <p>Hope your day goes great!</p>
-      </div>
+<!-- partial:index.partial.html -->
+<div class="envelope new">
+  <div class="front">
+    <div class="mail">
+      <p>Happy Birthday Rutuja</p>
+      <!-- <p>Click me</p> -->
+      <button onclick="play();">Click Me</button>
 
     </div>
-     
-    </body>
+              
+  </div>
+  <div class="back">
+    
+    <div class="letter">
+      <p>Happy Birthday Rutuja</p>
+			<p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy! </p>
+			<p>from Sunil</p>
 
-    </html>
+	<div class="box">
+		<div class="cake">
+			<div class="candle">
+				<div class="fire"></div>
+			</div>
+		</div>
+	</div>
+        <!-- <audio id="myAudio" controls autoplay>
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="bdayAudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio> -->
+    </div>
+    <div class="flip left-flip"></div>
+    <div class="flip right-flip"></div>
+    <div class="flip bottom-flip"></div>
+    <div class="flip top-flip"></div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.spritely/0.6.5/jquery.spritely.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
