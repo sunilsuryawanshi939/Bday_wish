@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Allan:700,400);
+/* @import url(https://fonts.googleapis.com/css?family=Allan:700,400); */
+@import url('https://fonts.googleapis.com/css?family=Montez|Sofia');
 body, html {
   width: 100%;
   height: 100%;
@@ -6,11 +7,27 @@ body, html {
 
 body {
   margin: 0;
-  background-color: mistyrose;
+  /* background-color: mistyrose; */
   position: relative;
   perspective: 800px;
   overflow: hidden;
+
+  background-image: url('hogwarts.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
+/*newly added*/
+p {
+  font-size: 25px;
+  font-family: 'Montez', cursive;
+}
+
+button {   
+  background-image: url('g3.png');   
+  width: 90px;   
+  height: 115px;       
+}   
 
 .envelope {
   z-index: 2;
@@ -25,7 +42,8 @@ body {
   transform-origin: right center;
   transition: transform 1s ease;
   font-family: "Allan", sans-serif;
-  color: #1F1F1F;
+  color: #e3a100;
+  /* 1F1F1F */
 }
 
 .envelope .front, .envelope .back {
@@ -91,7 +109,8 @@ body {
 .envelope .front .mail p:first-child {
   font-size: 50px;
   line-height: 50px;
-  color: #ff969f;
+  color: #9c1203; 
+  /* ff969f */
 }
 
 .envelope .front .mail p:last-child {
@@ -100,14 +119,16 @@ body {
 
 .envelope .back .letter p:nth-child(2) {
   font-size: 30px;
+  line-height: 22px;
   color: black;
 }
 
 .envelope .back .letter p:nth-child(3) {
   font-size: 30px;
-  color: #f57882;
-  margin-top: 150px;
+  color: #9c1203;
+  margin-top: 140px;
   float: right;
+  /* f57882 */
 }
 
 .envelope .back {
